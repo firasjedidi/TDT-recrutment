@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const OthersArticleCard = ({ item }) => {
   const navigate = useNavigate();
   return (
-    <div className=" relative w-full  lg:h-32  bg-gray-100 shadow-md rounded-lg">
+    <div className=" relative w-full  shadow-md rounded-lg">
         <section className="flex  items-start justify-between w-full h-full">
-          <section className="flex flex-col  items-start p-2 cursor-pointer" onClick={()=>navigate(`/detail/${item._id}`)}>
+          <section className="flex flex-col  items-start p-2 cursor-pointer" onClick={()=>navigate(`/detailed/${item._id}`)}>
             <section className="flex my-1 items-center space-x-1">
               {item.userId.image && (
                 <img

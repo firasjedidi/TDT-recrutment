@@ -17,7 +17,7 @@ Navigate to the Back-End Folder:
 cd TDT-back-end
 Install Dependencies:
 Run the following command to install the necessary dependencies :
-npm install or yarn add 
+npm install or yarn  
 Start the Server:
 
 Run the command to start the back-end server:
@@ -32,7 +32,7 @@ cd TDT-front-end
 Install Dependencies:
 
 Run the following command to install the necessary dependencies ():
-npm install || yarn dev 
+npm install || yarn  
 Start the Development Server:
 
 Run the command to start the front-end development server:

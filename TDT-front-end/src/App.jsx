@@ -8,6 +8,7 @@ import NavBar  from './components/NavBar';
 import NotFound  from './components/NotFound';
 import DetailedArticle  from './pages/DetailedArticle';
 import ProfileDialog from './components/dialogs/ProfileDialog';
+import OthersDetailedArticle from './pages/OthersDetailedArticle'
 function App() {
   const { auth } = useSelector((state) => state.user);
   const { openProfile } = useSelector((state) => state.settings);
@@ -20,6 +21,8 @@ function App() {
           <>
             <Route path="/" element={<Articles />} />
             <Route path="/:type/:id" element={<DetailedArticle />} />
+            <Route path="/detailed/:id" element={<OthersDetailedArticle />} />
+
           </>
         ) : (
           <>
@@ -28,7 +31,6 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
           </>
         )}
-        <Route path="/profile" element={<Articles />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
